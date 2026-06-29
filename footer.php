@@ -60,11 +60,11 @@
 						</span><!-- .to-the-top-short -->
 <span>
 <?php
-$x=__('Mon nouveau theme is the wordpress theme i created myself.');
+$x=__('Mon nouveau theme is the wordpress theme i created myself.', 'my-first-theme');
 printf($x);
-$x=_e('Hey');
+$x=_e('Hey', 'my-first-theme');
 printf($x);
-$x=_e('Twowords');
+$x=_e('Twowords', 'my-first-theme');
 printf($x);
 $x=_e('Theme');
 printf($x);
