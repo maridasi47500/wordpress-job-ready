@@ -1,9 +1,9 @@
 # bienvenue dans Job Ready Wordpress
 - j'ai ajouté un functions.php, header.php, footer.php, sidebar.php, index.php, single.php, style.css
 - vitre site est il un blog personnel, la site officiel d'une entreprise ? ou un portfolio?
-un magasin en ligne a besoin des fonctionnalités pour la présentation de produits, un panier d'achat et une integration avec un systeme de paiement
+un magasin en ligne a besoin des fonctionnalités pour la présentation de produits, un panier d'achat et une integration avec un systeme de paiement (woocommerce)
 - un blog : l'expérience de lecture des articles , partagesur les reseaux sociaux
-- le theme peut prendre en charge la traduction (traduire le contenu) (.pot) 
+- le theme peut prendre en charge la traduction (traduire le contenu) (.pot)  (download poedit)
 - le systeme doit prendre en charge la gestion des fichiers necessaire à la traduction, et compatibilite des plugin multilingue (wpml polylang)
 - le theme prend en charge des plugins comme WooCommerce, bbPress ou plugins populaire pour formulaire de contact
 (regardez la documentation du theme et sa derniere mise à jour)
@@ -138,3 +138,18 @@ add_action('pre_get_posts', 'crea_include_chapitres_in_home');
 ````
 - apres j'ai fait wget github/WordPress/WordPress/ .. /wp-content/themes/twentyfourteen/content-page.php
 # wordpress-job-ready
+Finally found the issue...
+
+TLDR; edit your php.ini and make sure you have both:
+
+display_errors = On
+
+error_log = php_errors.log
+Si rien ne se traduit, il peut y avoir plusieurs raisons à cela. 
+
+    Vous avez peut-être choisi la mauvaise langue sur votre site : par exemple, fr_CA (Canada) vs fr_FR (France)
+    Le fichier de trad est au mauvais endroit.
+    Le Nom du fichier ne correspond pas au text domain.
+    Vous devez vider le Cache.
+    Le projet n’a pas de text domain déclaré ou mélange plusieurs text domains.
+    Dans ces cas, n’hésitez pas à contacter la personne qui a développé le thème ou l’extension pour qu’il rende le projet « i18n-ready » (prêt pour l’internationalisation). 
