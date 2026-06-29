@@ -1,0 +1,14 @@
+/*
+Theme Name: My First Theme
+Theme URI: https://example.com/my-first-theme
+Author: Your Name
+Author URI: https://example.com
+Description: un theme wordpress que j'ai écrit moi meme
+Version: 1.0
+License: GPL v2 or later
+Text Domain: my-first-theme
+*/
+h1, h2 {
+color:green;
+background:orange;
+}
