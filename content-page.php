@@ -28,7 +28,8 @@
 				)
 			);
 
-			edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
+			$x= __('Edit');
+			edit_post_link( $x, '<span class="edit-link">', '</span>' );
 			?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
