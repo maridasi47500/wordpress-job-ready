@@ -1,4 +1,12 @@
 <?php
+function theme_setup()
+{
+    register_nav_menus( array(
+        'main' => 'Menu Principal',
+        'footer' => 'Bas de page',
+    ) );
+}
+add_action('init', 'theme_setup');
 function mychildtheme_enqueue_stylesa() {
    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'mytheme-style', get_stylesheet_uri() ); 

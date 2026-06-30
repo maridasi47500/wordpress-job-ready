@@ -22,12 +22,14 @@ get_header(); ?>
 	            the_content();
 	        endwhile;
 	    else :
-	        echo '<p>il ny a rien a afficher</p>';
+	        echo '<p>il n\'y a rien a afficher</p>';
 get_search_form();
 	    endif;
 ?>
 <?php
 get_sidebar( 'content' );
+get_sidebar( 'front' );
+
 get_sidebar();
 get_footer();
 
