@@ -8,10 +8,10 @@ function theme_setup()
 }
 add_action('init', 'theme_setup');
 function mychildtheme_enqueue_stylesa() {
-   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/css/mystyle.css' );
     wp_enqueue_style( 'mytheme-style', get_stylesheet_uri() ); 
 }
-//add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_stylesa');
+add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_stylesa');
 //function my_theme_setup() {
 //    // 注册导航菜单
 //    register_nav_menus( array(

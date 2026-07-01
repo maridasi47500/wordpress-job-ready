@@ -1,7 +1,7 @@
 # bienvenue dans Job Ready Wordpress
 - j'ai ajouté un functions.php, header.php, footer.php, sidebar.php, index.php, single.php, style.css
 - vitre site est il un blog personnel, la site officiel d'une entreprise ? ou un portfolio?
-un magasin en ligne a besoin des fonctionnalités pour la présentation de produits, un panier d'achat et une integration avec un systeme de paiement (woocommerce)
+un magasin en ligne a besoin des fonctionnalités pour la présentation de produits, un panier d'achat et une integration avec un systeme de paiement (woocommerce, prestashop)
 - un blog : l'expérience de lecture des articles , partagesur les reseaux sociaux
 - le theme peut prendre en charge la traduction (traduire le contenu) (.pot)  (download poedit)
 - le systeme doit prendre en charge la gestion des fichiers necessaire à la traduction, et compatibilite des plugin multilingue (wpml polylang)
@@ -9,7 +9,7 @@ un magasin en ligne a besoin des fonctionnalités pour la présentation de produ
 (regardez la documentation du theme et sa derniere mise à jour)
 - meillleure pratique SEO : balise H1, h2, attribut alt images, et url simple et significatif
 - le theme doit etre responsive et s'adapter aux telephones, tablettes et ordinateurs de bureau de tailles variees et fonctionner avec navigateurs populaires (chrome, firefox , safari, edge), utiliser les media queries
-- modifier le code HTML, css, php ou utiliser des outils de construction de pages visuels (elementer , WPBakery) pour les utilisateurs nons technique
+- modifier le code HTML, css, php ou utiliser des outils de construction de pages visuels (elementor, divi , WPBakery) pour les utilisateurs nons technique
 - objectif du site : exposition d'entreprise, e-commerce, blog de contenu, 
 - creer une carte du site claire (achitecture informationnelle est l'ossature du site web) avec fig ou sketch
 - avec node js et express, python et django, et php et laravel creer des model, vue et controlleur

@@ -89,6 +89,7 @@ printf($x);
 			</footer><!-- #site-footer -->
 
 		<?php wp_footer(); ?>
+[contact-form-7 id="e4f3dfb" title="Formulaire de contact 1"]
 
 	</body>
 </html>

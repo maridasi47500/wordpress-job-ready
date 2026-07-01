@@ -12,3 +12,22 @@ h1, h2 {
 color:green;
 background:orange;
 }
+.definition{} 	
+
+@media (min-width: 400px){
+.definition{}
+} 	
+
+@media (min-width: 550px)
+.definition{}
+} 	
+@media (min-width: 750px) {
+.definition{}
+} 	
+@media (min-width: 1000px){
+.definition{}
+} 	
+
+@media (min-width: 1200px){
+.definition{}
+}
